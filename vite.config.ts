@@ -7,6 +7,9 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  build: {
+    outDir: "public",
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
@@ -17,6 +20,6 @@ export default defineConfig({
     environment: "jsdom",
     setupFiles: "./src/test/setup.ts",
     css: true,
-    watch: true,
+    watch: false,
   },
 });
