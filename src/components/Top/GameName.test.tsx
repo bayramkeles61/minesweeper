@@ -6,5 +6,13 @@ import GameName from "./GameName";
 it("GameName renders correctly", () => {
   const { asFragment } = render(<GameName>minesweeper</GameName>);
 
-  expect(asFragment()).toMatchSnapshot();
+  expect(asFragment()).toMatchInlineSnapshot(`
+    <DocumentFragment>
+      <h1
+        class="text-[2em]"
+      >
+        minesweeper
+      </h1>
+    </DocumentFragment>
+  `);
 });

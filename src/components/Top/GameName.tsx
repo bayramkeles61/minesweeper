@@ -1,7 +1,14 @@
-import styled from "@emotion/styled";
+import { FC } from "react";
 
-const GameName = styled.h1`
-  font-size: 2em;
-`;
+export type GameNameProps = {
+  /**
+   * Text inside the header
+   */
+  children: string;
+};
+
+const GameName: FC<GameNameProps> = ({ children }) => {
+  return <h1 className="text-[2em]">{children}</h1>;
+};
 
 export default GameName;
