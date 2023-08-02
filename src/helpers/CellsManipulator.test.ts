@@ -6,7 +6,7 @@ import {
   checkItemInField,
 } from "./CellsManipulator";
 
-const { empty: e, hidden: h, bomb: b } = CellState;
+const { empty: e, bomb: b } = CellState;
 
 describe("Check neigbours selectors", () => {
   it("With [0, 0] coords", () => {

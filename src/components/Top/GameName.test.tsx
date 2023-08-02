@@ -6,7 +6,7 @@ import GameName from "./GameName";
 it("GameName renders correctly", () => {
   const { asFragment } = render(<GameName>minesweeper</GameName>);
 
-  expect(asFragment()).toMatchInlineSnapshot(`
+  expect(asFragment()).toMatchSnapshot(`
     <DocumentFragment>
       <h1
         class="text-[2em]"
