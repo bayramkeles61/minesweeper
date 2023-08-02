@@ -1,13 +1,13 @@
 import { FC } from "react";
-import GameName, { GameNameProps } from "./GameName";
+import GameName from "./GameName";
 import Legend, { LegendProps } from "./Legend";
 
-export type TopComponentType = LegendProps & GameNameProps;
+export type TopComponentType = LegendProps;
 
-const Top: FC<TopComponentType> = ({ children, ...legendProps }) => {
+const Top: FC<TopComponentType> = ({ ...legendProps }) => {
   return (
     <header className="text-center relative inline-block">
-      <GameName>{children}</GameName>
+      <GameName>Minesweeper</GameName>
       <Legend {...legendProps} />
     </header>
   );
